@@ -31,3 +31,9 @@ It counts how many times the container has been executed and persists the value 
    ```bash
    git clone https://github.com/your-username/dockerized-dotnet-mongodb-api.git
    cd dockerized-dotnet-mongodb-api
+
+2. Run the docker-compose:
+   ```bash
+   docker-compose up --build
+
+3. Access the http://localhost:8080/swagger

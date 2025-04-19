@@ -1,0 +1,40 @@
+## Build
+bin/
+obj/
+out/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio
+.vscode/
+*.ncrunch*
+.vs/
+*.dbmdl
+
+## ASP.NET
+appsettings.Development.json
+appsettings.Production.json
+appsettings.*.local.json
+
+## Docker
+*.dockerignore
+**/Dockerfile
+docker-compose.override.yml
+.env
+
+## Logs
+*.log
+
+## OS-specific
+.DS_Store
+Thumbs.db
+
+## Rider/JetBrains
+.idea/
+*.sln.iml
+
+## Git
+*.orig

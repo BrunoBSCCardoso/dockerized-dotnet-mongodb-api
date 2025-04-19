@@ -1,0 +1,23 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: counter-api
+    ports:
+    - "8080:8080"
+    depends_on:
+        - mongodb
+    volumes:
+    - ./appsettings.json:/app/appsettings.json:ro
+    restart: unless-stopped
+  mongodb:
+    image: mongo:7.0
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    restart: unless-stopped
+volumes:
+  mongo-data:  
